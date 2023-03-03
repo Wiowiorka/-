@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/main.css">
+	<script async src="js/popup.js"></script>
+	<title>Сайт группы</title>
+</head>
+<body class="page">
+
+<!-- Хедер -->
+<div class="conteiner">
+	<header id="header" class="header">
+	  	<img class="logo" src="img/logo.svg" alt="logo">
+			<ul class="menu">
+             	<li><a class="menu-link" href="main.html">Главная</a></li>
+              	<li><a class="menu-link" href="#">Студенты</a></li>
+             	<li><a class="menu-link" href="about.html">О курсе</a></li>
+             	<li><a class="menu-link" href="contacts.html">Контакты</a></li>
+			</ul>
+		   <a class="login-button">Войти</a>
+
+<!-- Попап -->
+		<div class="login-popup">
+        	<h2 class="login-heading">Войти на сайт</h2>
+        	<form class="login-form"> 
+        		<input class="login-input" name="login" type="text" placeholder="Логин" required>
+        		<input class="password-input" name="password" type="text" placeholder="Пароль" required>
+        		<button class="popup-button" type="submit">Войти</button>
+        </form>
+    	</div>
+	</header>
+</div>
+
+<!-- Контент-->
+<main id="main" class="main">
+   <h3>Гайнуллина Ирина Евгеньевна — филолог, швея, нефтяник и, прости господи, будущий фронтендер
+   </h3>
+  	<img class="pic" src="img/irka.png" alt="photo-student">
+   <h3>В этой голове рождаются и умирают проекты!</h3>
+  	<h4>    Закончила Южно-Уральский государственный университет (ЮУрГУ, Челябинск) по направлению <em>"Прикладная филология"</em>, бакалавр, 2015 г. Продолжила обучение в магистатуре Челябинского государственного университета (ЧелГУ, Челябинск) по направлению <em>"Экспертная деятельность"</em>, магистр, 2017 г.
+  	Опыт работы в нефтяной промышленности (<em>Транснефть</em>).
+  	Бросила все, чтобы искать себя.
+  	</h4>
+
+   <h3>Хочешь узнать больше?</h3>
+   <div class="me-links">
+          <a class="me-link" href="https://vk.com/wiowiorka"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAgBJREFUSEvtVcFVAjEQ/bN6lw4Mrp7FDrACtQKxAndpQG2AXSoQOsAKtAO968rYATaQ+JJdIdlkAX0+PcjeSIb5M///mRD+6KM/wsUG+NeY/8dUi2TaAuTlnGvCjLN4aHMvkqkA5LmjBynmbH9c18jEkjyBQsvc1eLmVIt+cQ2Fq1rSCx7sjz7PRL9IoJB5RlBRm/M2O0Wmhf69a529cxaXReg65kmT5y4ouneT0h1ne6crEgJKHnN+8LAo8KUHRbe1XGPO9noesD4QaTEDsOP8odaNSF9HgHLprgMHuoWKOjYrjqtFWuQAFjqXpDiVBiWxgINyEG54EF/bDbnApSGmyzRcBlwZ6hGoDFUmeuMsFvWc3hwHqSRMeBCfGTlCJqw6FmnxBODQlcrVP6ixSazHiqR2pKs1KePwIDCQAHQKqK47FT7FjcCNXQEzKHkG2up55vK0qQ4CY7YUuHK4T1sTQCMwRpzHF6Hrxl0tkmkHJPVsupT/EPjSR0IEl0oAWcljYJtBcuKZqwwfchYnjeMUakb0Q1uoFmnPcWjBmHVQmnOlxnbqinbdjb17FyHe5gpsN2PO6Ohze639Hpsxi6R+JPS+dQsIPxK+Oa0Ntjawy8BzF6AWIupARhPO2xrE+4xMoMXWktHoyx1/1cyr4r/V8aqk69xvgNdh6Udi/h/VH8zV9h+9fdG6AAAAAElFTkSuQmCC" alt="logo-vk"></a>
+          <a class="me-link" href="https://t.me/gainullinaie"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAklJREFUSEvtlkFu2mAQhd8zUSGr0KVRpZob5AalJ4AbQE8Qd9HUy3Rn2kXhBNATJD1Bkxs0F4hdqcJb2LmVYKpxDP2xTTAiKIt2lsb838yb98+YeKLgE3HxH3wQ5Z13P0/BShu/42E4aE4VcjCpHTeoo3rcJcQF4ChMRN6GHxuDg4Cd80nHotUVSCcr36ODHS9yLOFZCkuqKwohXoe+fb1XxYmUz2ptEj0ArQxoJiIXJD+bz4O+vWrtzj1Wo1hW5UzADiD1bGWEDBfkgMJLQE5XvxM3gW+vEiwFLjJKXkq5FdLFfD6ldTRagyYuluFdv6FGS+JB8L1R2BYkcm6KGYnBnW9fqBq0jr4VKSHEm9C3xxvBahQs0E17t9Eoado3mlTo26HjRa1U3pz8yVUimvpeDqxyslq7LDBKUaUzIdxlBY4X9SgYPaRK0LfXElpJrbKSaogtQXyROHaXE6gEVBu6ZqxcjxMT1Wodil5+qgNPDFf+SGVN7qFG04vGEHS35kp8UA+Y7201Fy12CISLOB4sq9wFmvZ3NThKubqoElXFqh6PikbipsrlV/zcTHrrdSo6qPl+cgWwvU1es0WBb+duR6kBYkKaXnQNwavSYMjXoN/ILYyDg82NVNpcxVJHsnyu0wgLqWeXgfk/cyM9Bngmi3kr/PTiux6WjMpK5QqCl9lkzY20L3hqQpeH3U++6njdeHIb9Bt/N5RB3rnHCsheDbMS53ziktRhcZLdSHtVXMbNyRcJ0MsOnYODyyS3s9RlDi3zzr8H/gPPtvgf7WduaQAAAABJRU5ErkJggg==" alt="logo-tg"></a>
+          <a class="me-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAYZJREFUSEvtlttVwkAQhv9ZHiExiwVIB9KB0oF0YAfYgbECS9AOxAqEDuhALECTQ8Jb2PFsSCABDtlwCw/sW86ZmW/n37mEUNGhiri4gE+m/HlJ7TUa9wDu0vSZSH8bHQbGgnkcGwvhQ6mRDMPhqnMuY69eb7MQHwBaRhRTI6IRCdGVvj+/EJCv6j/LGmQzNY1raDdoBkFnDew5Totns2/DIDuZUa0mpe/7uYz1uzLR104RDZ2IuSPDUKu6lNqzrEcG3gxifCY1cGtgmzMhoCuDoJ8D/9q2S8zPRcGY6OV6MnE9235iZhfAVZFPpjti373A2tlzHEdFkUtEPRN4eum9wSksKcz3oo44FljXx9ZBczCwlhpR1GOi+N2KzkHASRe8AnCKgFuLq0Q79UHUAnPbFLiYVhv7uLIBUtXI1HIceUkMm0GwqPpNa1GPtJuy71dg/0NKPcjpdLS2nbKOemEoIZa3mxdSmeqNF4E+QqlBuhiyjPP69TmwzBvDXTI+hcoxozKp/wEH/cof+YfSYAAAAABJRU5ErkJggg==" alt="logo-yt"></a>         
+   </div>
+</main>
+
+<!-- Футер -->
+   <footer id="footer" class="footer">
+   	<p class="base"> 
+   		2022 &copy; <a class="copiright"> учебный центр</a> 
+   	</p>
+   </footer>
+</body>
+</html>

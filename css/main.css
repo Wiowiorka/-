@@ -1,0 +1,398 @@
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 86px;
+}
+
+/*Header*/
+.header { 
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1300px;
+	min-width: 350px;
+	min-height: 80px;
+	background-color: #213b7e;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 86px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-self: stretch;
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+
+.menu > li {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu-link {
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	padding: 0 19px;
+	background-color: #213B7E;
+	color: #FFF;
+	font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+	text-decoration-line: underline;
+}
+
+.menu-link:hover {
+	background-color: #FFF;
+	color: #213B7E;
+	text-decoration: none;
+}
+
+.login-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 400;
+	color: #FFF;
+	font-family: 'Roboto';
+	font-style: normal;
+	text-decoration: none;
+	background-color: #EA5D21;
+	width: 153px;
+	min-height: 50px;
+}
+
+/*Pop-up*/
+.login-popup {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -20%);
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 500px;
+	min-height: 418px;
+	padding: 26px 28px 50px;
+	background: #FFFFFF;
+	border: 1px solid #213B7E;
+	background-color: #FFFFFF;
+}
+
+.login-heading {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000000;
+	text-align: center;
+}
+
+.login-form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.login-form > input {
+	width: 100%;
+	max-width: 500px;
+	min-height: 50px;
+	margin-bottom: 56px;
+	border: 1px solid #808080;
+}
+
+.login-input {
+	width: 444px;
+	min-height: 50px;
+	background: #FFFFFF;
+	border: 1px solid #808080;
+	Font-size: 24px;
+	Line-height: 28px;
+	color: #808080;
+	padding: 10px;
+}
+
+.password-input {
+	width: 444px;
+	min-height: 50px;
+	background: #FFFFFF;
+	border: 1px solid #808080;
+	Font-size: 24px;
+	Line-height: 28px;
+	color: #808080;
+	padding: 10px;
+}
+
+.popup-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 153px;
+	min-height: 50px;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #EA6113;
+	border: none;
+}
+
+.show-popup {
+	display: block;
+}
+
+.active-link {
+	color: #213B7E;
+	background-color: #fff;
+	text-decoration: none;	
+}
+
+/*Офферная композиция*/
+
+.main {
+	width: 100%;
+	max-width: 911px;
+	height: auto;
+	margin: 0 auto;
+	flex-grow: 1;
+}
+
+.photo {
+	width: 100%;
+	max-width: 523px;
+	height: auto;	
+}
+
+h1 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+h2 {
+	margin-top: 7px; 
+	margin-bottom: 10px; 
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+}
+
+.text1 {
+	width: 100%;
+	max-width: 634px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 15px; 
+}
+
+.text2 {
+	width: 100%;
+	max-width: 634px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	margin-top: 10px; 
+	margin-bottom: 177px; 
+}
+
+em {
+	color: #CF5510
+}
+
+/*Students*/
+
+.student-name {
+	display: block;
+	text-align: center;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	text-decoration-line: none;
+}
+
+.students {
+	max-width: 1200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.student-photo {
+	width: 100%;
+	max-width: 200px;
+	min-height: 270px;
+}
+
+.student {
+	padding-left: 50px;
+}
+
+.student:hover {
+	text-decoration-line: underline;
+}
+
+/*Cвоя страница*/
+
+.pic {
+	width: 341px;
+	height: 512px;
+	margin: 0 auto;
+	display: flex;
+	padding-right: 60px;
+    padding-bottom: 10px;
+	float:left; 
+    margin: 7px 7px 7px 0;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	text-decoration-line: underline;
+	margin-bottom: 10px;
+}
+
+
+h4 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 20px;
+	text-decoration-line: none;
+	text-align: justify;
+}
+
+.me-links {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+
+.me-link:hover {
+  color: #4facfe;
+}
+
+/*About*/
+
+.main-about {
+	width: 100%;
+	max-width: 900px;
+	height: auto;
+	margin: 0 auto;
+	flex-grow: 1;
+}
+
+.video {
+	width: 100%;
+	max-width: 820px;
+	height: 550px;
+	margin-bottom: 177px; 
+}
+
+.text-content {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+}
+
+/*Contacts*/
+
+.main-contacts {
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	flex-grow: 1;
+}
+
+.map {
+	width: 100%;
+	max-width: 1268px;
+	height: 370px;
+}
+
+.text-address{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 10px;
+}
+
+.telephone {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-decoration: underline;
+}
+
+/*Footer*/
+
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1300px;
+	min-height: 60px;
+	margin: 0 auto;
+	padding: 0 86px;
+	background-color: #213b7e;
+	justify-content: center;
+	align-items: center;
+}
+
+.base {
+	margin: 0 auto;
+	background-color: #213B7E;
+	color: rgba(255, 255, 255, 0.5);
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.copiright {
+	margin: 0 auto;
+	background-color: #213B7E;
+	color: rgba(255, 255, 255, 0.5);
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	text-decoration-line: underline;
+}
